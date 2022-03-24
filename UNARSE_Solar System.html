@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="urf-8">
+    <head>
+        <base target="newSpace">
+        <title> The Solar System </title>
+        <script language="JavaScript">
+            function writeText(txt){
+                document.getElementById("desc").innerHTML=txt;
+            }
+            function dissolveText(txt){
+                document.getElementById("desc").innerHTML=txt;
+            }
+        </script>
+        <style>
+            body {
+                margin: 10px;
+                background-color: #00001f;
+            }
+            h1{
+                font-family: 'Cinzel', serif;
+                font-size: 55px;
+                color: white;
+                text-align: center;
+            }
+            p#desc{
+                font-family: 'Vollkorn', serif;
+                font-size: 25px;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <h1> Solar System </h1>
+        <br>
+        <div align="center">
+            <img src="IMAGES/solar system.jpg" usemap="#solarsystem">
+            <map name="solarsystem">
+                
+                <area shape="rect" coords="181,375,218,415" href="Mercury.html" onmouseover="writeText('Mercury has some extreme temperature changes.');" onmouseout=
+                "dissolveText('');">
+
+                <area shape="circle" coords="155,300,60" href="Earth.html" onmouseover="writeText('Earth is the only place in the known universe confirmed to host life.');" 
+                onmouseout="dissolveText('');">
+
+                <area shape="poly" coords="297,52,309,54,319,69,316,81,310,96,270,97,270,91,266,71,468" href="Uranus.html" onmouseover="writeText
+                ('Uranus is the seventh planet away from the Sun.');" onmouseout="dissolveText('');">
+                
+            </map>
+            <p id="desc"></p>
+        </div>
+    </body>
+</html>
+
+
+
+
+                
+      
+
+           
+                
+            
